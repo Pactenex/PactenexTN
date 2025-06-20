@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pactenex | Business Brokerage</title>
+  
+  <link rel="icon" type="image/png" href="https://i.imgur.com/hyUrF8i.png">
+  <meta name="description" content="Pactenex: Business brokerage, admin consulting, and growth support for entrepreneurs and enterprises worldwide.">
+  <style>
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header h1 {
+        font-size: 20px;
+      }
+      .logo {
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #002b45;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      height: 140px;
+      margin-right: 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      flex: 1;
+    }
+    header nav {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    header nav a {
+      margin: 5px 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #003b5c;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #c49a00;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #002b45;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    ul li::before {
+      content: '\1F4BC';
+      margin-right: 10px;
+    }
+    .toggle-service {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .subservices {
+      display: none;
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    .subservices li::before {
+      content: '\25B6';
+      margin-right: 8px;
+      color: #666;
+    }
+    .subservices.show {
+      display: block;
+    }
+    footer {
+      background-color: #e9ecef;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+    .contact-info {
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggles = document.querySelectorAll(".toggle-service");
+      toggles.forEach(toggle => {
+        toggle.addEventListener("click", function() {
+          const subList = this.nextElementSibling;
+          if (subList && subList.classList.contains('subservices')) {
+            subList.classList.toggle("show");
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/hyUrF8i.png" alt="Pactenex Logo" class="logo" />
+    <h1>Pactenex</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Connecting Buyers and Sellers with Confidence</h2>
+    <a href="mailto:Pactenex@gmail.com?subject=Inquiry%20from%20Website">Contact Us Today</a>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      At Pactenex, we wear a few hats – we’re business brokers, admin consultants, and business development partners. Whether you’re buying or selling a business, looking to get more organized, or ready to take your next big step, we’re here to guide you through it.
+    </p>
+    <p>
+      We take a hands-on, practical approach. That means tailored support, clear advice, and solutions that actually work for your business – not just in theory, but in real life.
+    </p>
+    <p>
+      Think of us as your go-to team for smart business moves and smoother operations. We’re all about helping you create value, cut through the noise, and keep growing.
+    </p>
+    <p>
+      Let’s make business better, together.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li class="toggle-service">Business Brokerage</li>
+      <ul class="subservices">
+        <li>Business Listings</li>
+        <li>Buyer/Seller Matching</li>
+        <li>Negotiation Support</li>
+        <li>Transaction Management</li>
+      </ul>
+      <li class="toggle-service">Administrative Consulting</li>
+      <ul class="subservices">
+        <li>Workflow Optimization</li>
+        <li>Document Management</li>
+        <li>Virtual Assistant Setup</li>
+        <li>System Implementation</li>
+      </ul>
+      <li class="toggle-service">Business Development Services</li>
+      <ul class="subservices">
+        <li>Strategic Planning</li>
+        <li>Market Research</li>
+        <li>Partnership Development</li>
+        <li>Growth Strategy</li>
+      </ul>
+    </ul>
+  </section>
+
+  
+  <section id="faq">
+    <h2>FAQ</h2>
+    <ul>
+      <li><strong>What does a business broker do?</strong><br>We help clients buy or sell businesses by managing the entire process—from listing to negotiation to closing the deal—ensuring a smooth, confidential, and professional experience.</li>
+      <li><strong>How does Pactenex differ from other brokers or consultants?</strong><br>We combine brokerage with admin consulting and development support, giving clients a more holistic, practical approach that supports long-term business success—not just the transaction.</li>
+      <li><strong>Do you only work with businesses in Zambia?</strong><br>No. Pactenex is fully remote and available to clients worldwide. Whether you're local or international, we're equipped to support you.</li>
+      <li><strong>How do you charge for your services?</strong><br>Our pricing varies by service. Brokerage is typically commission-based, while consulting and development services may be project- or retainer-based. We'll provide a clear proposal before any engagement.</li>
+      <li><strong>Can you help me prepare my business for sale?</strong><br>Yes. We offer readiness assessments, valuation support, documentation prep, and guidance to make your business more attractive to buyers.</li>
+      <li><strong>I’m not ready to sell—can you still help me?</strong><br>Absolutely. Our consulting and business development services are perfect for owners looking to streamline operations, grow sustainably, or get organized before taking bigger steps.</li>
+      <li><strong>How do I get started?</strong><br>Simply email us at <a href="mailto:Pactenex@gmail.com">Pactenex@gmail.com</a> or call us at <a href="tel:+260976351132">+260976351132</a>. We’ll set up a free intro call to understand your needs.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Remote-based – available worldwide</p>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:Pactenex@gmail.com">Pactenex@gmail.com</a></p>
+      <p>Phone: <a href="tel:+260976351132">+260976351132</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Pactenex. All rights reserved.
+  </footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
